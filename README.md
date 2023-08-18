@@ -1,5 +1,6 @@
 
-![](Art/otis.jpg)
+![](Art/main.png)
+![](Art/shades2.png)
 
 > An elegant dark theme for gnome
 
@@ -10,8 +11,8 @@ Extract the zip file to the themes directory i.e. `/usr/share/themes/` or `~/.th
 To set the theme on Gnome, run the following commands in Terminal:
 
 ```
-gsettings set org.gnome.desktop.interface gtk-theme "Otis"
-gsettings set org.gnome.desktop.wm.preferences theme "Otis"
+gsettings set org.gnome.desktop.interface gtk-theme "Shades-of-purple"
+gsettings set org.gnome.desktop.wm.preferences theme "Shades-of-purple"
 ```
 or Change via distribution specific tool.
 
