@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Andromeda  
+Name=Shades-of-purple  
 Comment=An elegant dark theme for gnome
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Andromeda
-MetacityTheme=Andromeda
-IconTheme=Zafiro-icons
+GtkTheme=Shades-of-purple
+MetacityTheme=Shades-of-purple
+IconTheme=candy-icons
 ButtonLayout=:minimize,maximize,close
