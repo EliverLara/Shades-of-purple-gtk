@@ -2,30 +2,30 @@
 // it gets @if ed depending on $variant
 
 // Main definitions
-$base_color: #23262E;
-$text_color: #d8dee9;
-$bg_color: #1A1D23;
-$fg_color: #d8dee9;
+$base_color: #341d57;
+$text_color: #ffffff;
+$bg_color: #25143D;
+$fg_color: #ffffff;
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
-$shadow_color: rgba(162, 162, 165, 0.21);
+$shadow_color: rgba(165, 163, 162, 0.21);
 
 $main_dark_color: darken($bg_color, 2%);
-$_sidebar_color: darken($main_dark_color, 0%);
+$_sidebar_color: darken($main_dark_color, 1%);
 
 // Primary colors
-$lime: #84ff39;
-$red: #ff007a;
-$orange: #f39c12;
-$yellow: #f3d56e;
-$purple: #c74ded;
-$darkpurple: #7b7bbd;
-$cyan: darken(#00e8c6, 5%);
-$blue: #7cb7ff;
+$lime: #3AD900;
+$red: #f90029;
+$orange: #ec3a37;
+$yellow: #FAD000;
+$purple: #fb94ff;
+$darkpurple: #9500ff;
+$blue: #6943ff;
+$cyan: #80fcff;
 $slider: #7b7bbd;
-$teal: #34eceb;
+$teal: #a3be8c;
 
-$selected_fg_color: #fff;
-$selected_bg_color: #007DB8;
+$selected_fg_color: #1E1E3F;
+$selected_bg_color: $yellow;
 /*$selected_bg_color: #00e8c6;06d6a0*/
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: darken($main_dark_color, 5%);
@@ -48,7 +48,7 @@ $scrollbar_slider_active_color: if($variant=='light', darken($selected_bg_color,
 
 $warning_color: if($variant == 'light', $orange, darken($orange,10%));
 $error_color: if($variant == 'light', $red, darken($red,5%));
-$success_color: if($variant == 'light', $cyan, darken($cyan,10%));
+$success_color: if($variant == 'light', $darkpurple, darken($darkpurple,10%));
 $destructive_color: if($variant == 'light', darken($red,5%), darken($red,10%));
 $suggested_color: if($variant == 'light', $selected_bg_color, darken($selected_bg_color,10%));
 
@@ -108,6 +108,6 @@ $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdro
 
 $scale_bg: if($variant == 'light', transparentize(black,0.86) ,transparentize(white,0.86));
 $scale_disabled_bg: if($variant == 'light', transparentize(black, 0.94) ,transparentize(white, 0.94));
-$suggested_bg_color: $cyan;
+$suggested_bg_color: $darkpurple;
 $destructive_bg_color: $red;
-$menu_shadow_color: if($variant == 'light', transparentize(rgb(122, 122, 122), 0.6), $borders_color);
+$menu_shadow_color: if($variant == 'light', transparentize(rgb(122, 122, 122), 0.6), rgb(0, 0, 0));

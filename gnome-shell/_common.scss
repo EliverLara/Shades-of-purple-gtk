@@ -50,7 +50,7 @@ StEntry {
   @include entry(normal);
   border-radius: 6px;
   padding: 4px;
-  border-width: 1px;
+  border-width: 2px;
   color: $fg_color;
   &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
@@ -64,6 +64,7 @@ StEntry {
   }
   
   StLabel.hint-text { color: transparentize($fg_color, 0.3); }
+
 }
 
 
@@ -173,7 +174,11 @@ $slider_size: 15px;
   background-color: $osd_bg_color;
   box-shadow: $depth6;
 
-  .modal-dialog-content-box { padding: 24px; }
+  .modal-dialog-content-box {
+    margin: 32px 40px;
+    spacing: 32px;
+    max-width: 28em;
+  }
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -229,7 +234,6 @@ $slider_size: 15px;
 
 /* End Session Dialog */
 .end-session-dialog {
-  spacing: 42px;
   border: none;
   & .modal-dialog-linked-button:last-child {
     @include gradient();
@@ -375,7 +379,7 @@ $slider_size: 15px;
 
 .prompt-dialog {
   //this is the width of the entire modal popup
-  width: 34em;
+  width: 28em;
   border: none;
   border-radius: 10px;
 
@@ -1034,7 +1038,7 @@ $slider_size: 15px;
         box-shadow: none;
       }
       &:active,&:selected {
-        color: $selected_fg_color;
+        color: $selected_dark_fg_color;
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
         box-shadow: none;
@@ -1062,18 +1066,18 @@ $slider_size: 15px;
         font-weight: bold;
         border: 1px solid transparentize($borders_color,0.5);
         border: 1px solid $selected_bg_color;
-        background-color: transparent;
-        color: $selected_fg_color !important;
+        background-color: transparentize($selected_bg_color, 0.3);
+        color: $selected_dark_fg_color !important;
         background-gradient-direction: none;
 
         &:hover,&:focus {
           background-color:lighten($selected_bg_color, 3%);
-          color: $selected_fg_color;
+          color: $selected_dark_fg_color;
         }
 
         &:active,&:selected {
           background-color: $selected_bg_color;
-          color: $selected_fg_color;
+          color: $selected_dark_fg_color !important;
 
           &:hover,&:focus {
             background-color:lighten($selected_bg_color, 3%);
@@ -1314,7 +1318,7 @@ $slider_size: 15px;
 
 .window-close {
   background-color: $orange;
-  @include gradient(#882ae9,#34eceb);
+  @include gradient();
   color: $topbar_color;
   border-radius: 30px * 0.5 + 3px * 2;
   padding: 2px;
@@ -1422,20 +1426,11 @@ $slider_size: 15px;
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 8px;
-    border: 2px solid lighten($bg_color, 5%);
-    color: $fg_color;
-    background-color: lighten($bg_color, 5%);
-    box-shadow: $depth;
-
-
+    border-radius: 10px;
+    border-color: transparent;
+  
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
-
-    &:hover, &:focus {
-      background-color: lighten($bg_color, 5%);
-      border-color: transparentize($selected_bg_color, 0.5);
-      .search-entry-icon { color: $fg_color; }
-    }
+  
   }
 
   //search results
@@ -1560,7 +1555,7 @@ $slider_size: 15px;
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: lighten($base_color, 7%);
+      background-color: lighten($base_color, 14%);
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
@@ -1568,7 +1563,7 @@ $slider_size: 15px;
 
     &:active .overview-icon,
     &:checked .overview-icon {
-      background-color:  lighten($base_color, 7%);
+      background-color:  lighten($base_color, 14%);
       box-shadow: inset $depth2;
       color: $fg_color;
     }
@@ -1590,13 +1585,13 @@ $slider_size: 15px;
     transition-duration: 100ms;
     text-align: center;
     box-shadow: none;
-    border-radius: 12px;
+    border-radius: 18px;
   }
 
 /* App Folders */
 .app-well-app.app-folder {
-  background-color:  lighten($base_color, 7%);
-  border-radius: 12px;
+  background-color:  lighten($base_color, 12%);
+  border-radius: 18px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
@@ -1691,17 +1686,16 @@ $slider_size: 15px;
   }
   
   .page-navigation-arrow {
-    &  > StIcon {
-      margin: 6px;
-      padding: 18px;
-      width: 24px;
-      height: 24px;
-      border-radius: 99px;
-    }
+    margin: 6px;
+    padding: 18px;
+    width: 24px;
+    height: 24px;
+    border-radius: 99px;
+    
   
-    &:insensitive > StIcon { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
-    &:hover > StIcon { background-color: transparentize($selected_bg_color, 0.5);}
-    &:active > StIcon {background-color: $selected_bg_color;}
+    &:insensitive { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
+    &:hover { background-color: transparentize($selected_bg_color, 0.5);}
+    &:active {background-color: $selected_bg_color;}
   }
   
 
@@ -2265,7 +2259,7 @@ $base_padding: 6px;
   border-radius: 99px;
 
   &:checked { 
-    @include button(active, lighten($bg_color, 12%));
+    @include button(active, darken($darkpurple, 4%));
     color: $selected_fg_color;
   }
 
@@ -2305,7 +2299,7 @@ $base_padding: 6px;
     padding: $base_padding $base_padding*1.75;
     border-width: 0;
     &:checked { 
-      @include button(active, lighten($base_color, 3%));
+      @include button(active, darken($darkpurple, 4%));
       color: $selected_fg_color;
       border-width: 0;
     }
@@ -2337,7 +2331,7 @@ $base_padding: 6px;
 
       &.active { 
         background-color: $selected_bg_color; 
-        color: $selected_fg_color;
+        color: $selected_dark_fg_color;
       }
     }
   }

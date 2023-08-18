@@ -208,15 +208,15 @@ button {
   }
 
   // Suggested and Destructive Action buttons
-  @each $b_type, $b_color in (suggested-action, $cyan),
+  @each $b_type, $b_color in (suggested-action, $success_color),
                              (destructive-action, $destructive_color) {
     &.#{$b_type} {
       border: none;
       
       @if $b_type ==  suggested-action {
-        @include button(rounded, $b_color, white);
+        @include button(rounded, $b_color, #fff);
       } @else {
-        @include button(rounded-red, $b_color, white); 
+        @include button(rounded-red, $b_color, #fff); 
       }
 
       &.flat {
@@ -225,7 +225,7 @@ button {
         //color: $b_color; //FIXME: does it work on the dark variant?
       }
 
-      &:hover { @include button(hover, $b_color, white); }
+      &:hover { @include button(hover, $b_color, #fff); }
 
       &:active,
       &:checked { @include button(active, $b_color, white); }

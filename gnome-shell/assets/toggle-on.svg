@@ -20,15 +20,15 @@
      id="defs2859">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient1252">
+       id="linearGradient1643">
       <stop
          style="stop-color:#882ae9;stop-opacity:1;"
          offset="0"
-         id="stop1248" />
+         id="stop1639" />
       <stop
-         style="stop-color:#34eceb;stop-opacity:1;"
+         style="stop-color:#fb94ff;stop-opacity:1;"
          offset="1"
-         id="stop1250" />
+         id="stop1641" />
     </linearGradient>
     <linearGradient
        id="linearGradient3864">
@@ -112,7 +112,7 @@
     </filter>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1252"
+       xlink:href="#linearGradient1643"
        id="linearGradient1254"
        x1="462.64286"
        y1="792.36218"
@@ -121,7 +121,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1252"
+       xlink:href="#linearGradient1643"
        id="linearGradient2011"
        x1="462.64285"
        y1="792.36218"
@@ -137,16 +137,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="9.6307852"
-     inkscape:cx="29.956021"
+     inkscape:cx="29.177268"
      inkscape:cy="20.403321"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1012"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1547"
+     inkscape:window-height="756"
+     inkscape:window-x="50"
+     inkscape:window-y="118"
+     inkscape:window-maximized="0"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:snap-bbox="true"

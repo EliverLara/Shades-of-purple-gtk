@@ -256,7 +256,7 @@
   //
   // hovered button headerbar look
   //
-  color: if($tc==$text_color, $selected_bg_color, $tc);
+  color: $tc;
   text-shadow: none;
   background-color: transparentize($c, 0.3);
 }
@@ -289,13 +289,7 @@
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background:
-  linear-gradient(to  right, #882ae9, #34eceb)
-  left 
-  bottom
-  lighten($headerbar_color, 12%)
-  no-repeat; 
-  background-size: 100% 1.5px;
+  background-color: lighten($headerbar_color, 17%);
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }

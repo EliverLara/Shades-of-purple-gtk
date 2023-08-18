@@ -308,10 +308,18 @@ tabbar {
     background-color: darken($base_color, 5%);
     padding: 0px;
     color: $fg_color;
+    > tabboxchild {
+      margin: 0 -3px;
+      border-radius: 0;
+    }
 
     > tab,
     > tabboxchild > tab {
-      &:checked, &:selected { background-color: $base_color; }
+      &:checked, &:selected { 
+        border-radius: 0;
+    @include selected-tab(right); 
+    color: $selected_bg_color;
+       }
     }
   }
 }

@@ -33,9 +33,6 @@
   row{
     padding: 8px 12px;
     transition: all .12s ease-in;
-    label{
-      color: #98abb2;
-    }
     &:selected{
       color: $selected_fg_color;
       // border-left: 4px solid $selected_bg_color;
@@ -129,7 +126,6 @@ placessidebar{
 						margin-right: 7px;
 						padding-left: 14px;
 						padding-right: 7px;
-						color: #98abb2;
 					}
 				}
 
@@ -139,24 +135,26 @@ placessidebar{
 				}
 
 				&:selected {
-          border-left: 2px solid #79B4B7;
-          &, & label { color: $selected_fg_color; }
+          //  border-left: 2px solid $selected_bg_color;
+          &, & label { color: $fg_color; }
           &, &:backdrop {
-            background:linear-gradient(to right,#79B4B7, #8CA1A5,
-            lighten($_sidebar_color, 7%) 40px,  lighten($_sidebar_color, 7%) 97%);
+            background:linear-gradient(to right, darken($selected_bg_color, 7%) 40px,
+                                                  lighten($_sidebar_color, 7%) 36px,
+                                                  lighten($_sidebar_color, 7%) 97%
+                                      );
           }
-			
+      
           &:backdrop {
-            &, & label { color:$backdrop_selected_fg_color; }
+            &, & label { color:$backdrop_fg_color; }
             .sidebar-icon {
               -gtk-icon-shadow: none;  
             }
           }
 
-					.sidebar-icon {
-						-gtk-icon-shadow: 0 1px transparentize(#fff, 0.2);
-						color: inherit; 
-					}
+          .sidebar-icon {
+            -gtk-icon-shadow: 0 1px transparentize(#000000, 0.2);
+            color: $selected_fg_color; 
+          }
         }
         
         &.sidebar-new-bookmark-row { 

@@ -14,7 +14,7 @@
     background-color: $main_dark_color;
     background-clip: padding-box;
     border: 1px solid $borders_color;
-    box-shadow: 0 4px 6px $menu_shadow_color;
+    box-shadow: 0 4px 18px $menu_shadow_color;
     color: $fg_color;
   }
 
@@ -25,7 +25,7 @@
 
   > contents {
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 10px;
 
     > list,
     > .view,
@@ -35,7 +35,7 @@
     }
 
     separator {
-      background-color: mix($bg_color, $borders_color, 30%);
+      background-color: lighten($base_color, 8%);
       margin: 3px;
     }
 

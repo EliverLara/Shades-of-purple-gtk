@@ -66,7 +66,7 @@ headerbar {
     }
     &:active,
     &:checked {
-      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+      @include button(active, transparentize($selected_bg_color, 0.3), $selected_fg_color);
     }
 
     &:backdrop,
@@ -83,7 +83,7 @@ headerbar {
       }
     }
 
-    @each $b_type, $b_color in (suggested-action, $cyan),
+    @each $b_type, $b_color in (suggested-action, $success_color),
                                (destructive-action, $destructive_color) {
       &.#{$b_type} {
         font-weight: bold;
@@ -91,12 +91,12 @@ headerbar {
         margin-top: 5px;
         margin-bottom: 5px;
         border-radius: 6px;
-        @include button(normal, $b_color, white);
+        @include button(rounded, $b_color, white);
         box-shadow: none;
 
         &:hover { @include button(hover, $b_color, white); }
 
-        &:active { @include button(active, $b_color, white); }
+        &:active { @include button(active, $b_color, $selected_fg_color); }
 
         &:disabled {
           @include button(insensitive, $b_color, white);
