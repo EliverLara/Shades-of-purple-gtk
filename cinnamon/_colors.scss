@@ -1,24 +1,24 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
-$base_color: #1E252C;
-$text_color: #d8dee9;
-$bg_color: #1A2026;
-$fg_color: #d8dee9;
+$base_color: #341d57;
+$text_color: #ffffff;
+$bg_color: #25143D;
+$fg_color: #ffffff;
 
 $main_dark_color: darken($bg_color, 2%);
 
 // Primary colors
-$lime: #8CA1A5;
-$red: #FF56AC;
-$orange: #ED878F;
-$yellow: #F3D88E;
-$purple: #A572A4;
-$darkpurple: #7b7bbd;
-$blue: #5e81ac;
-$cyan: #79B4B7;
+$lime: #3AD900;
+$red: #f90029;
+$orange: #ec3a37;
+$yellow: #FAD000;
+$purple: #fb94ff;
+$darkpurple: #9500ff;
+$blue: #6943ff;
+$cyan: #80fcff;
 
-$selected_fg_color: #fff;
-$selected_bg_color: #8CA1A5;
+$selected_fg_color: #1E1E3F;
+$selected_bg_color: $yellow;
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color:darken($bg_color, 7%);
 
