@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Andromeda</name>
+	<name>Shades-of-purple</name>
 	<author>Eliver Lara &lt;eliverlara@gmail&gt;</author>
-	<copyright>&#194;Eliver Lara, 2022</copyright>
-	<date>2022</date>
-	<description>Andromeda Window Theme</description>
+	<copyright>&#194;Eliver Lara, 2023</copyright>
+	<date>2023</date>
+	<description>Shades-of-purple Window Theme</description>
 </info>
 
 
 <!-- CONSTANTS -->
-<constant name="C_titlebar" value="#111216" />
-<constant name="C_titlebar_unfocused" value="#111216" />
-<constant name="C_border_focused" value="#111216" />
-<constant name="C_border_unfocused" value="#111216" />
+<constant name="C_titlebar" value="#1C102F" />
+<constant name="C_titlebar_unfocused" value="#1C102F" />
+<constant name="C_border_focused" value="#1C102F" />
+<constant name="C_border_unfocused" value="#1C102F" />
 <constant name="C_title_focused" value="#d8dee9" />
 <constant name="C_title_unfocused" value="#93979f" />
 
