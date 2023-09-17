@@ -10,13 +10,13 @@ stage {
 /* Buttons */
 .button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button {
   color: #ffffff;
-  background-color: #2e194c;
+  background-color: #331c54;
   box-shadow: none;
   border-radius: 6px;
   padding: 5px 32px; }
   .button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus {
     color: #ffffff;
-    background-color: #381e5c;
+    background-color: #41236b;
     box-shadow: none; }
   .button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive {
     color: #928a9e;
@@ -32,12 +32,12 @@ stage {
     icon-shadow: none; }
   .button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover {
     color: #ffffff;
-    background-color: #381e5c; }
+    background-color: #41236b; }
 
 .modal-dialog-linked-button {
   padding: 10px;
   color: #ffffff;
-  background-color: #2e194c;
+  background-color: #331c54;
   box-shadow: none; }
   .modal-dialog-linked-button:insensitive {
     color: #928a9e;
@@ -53,15 +53,15 @@ stage {
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
     color: #ffffff;
-    background-color: #381e5c;
+    background-color: #41236b;
     box-shadow: none; }
     .modal-dialog-linked-button:focus:hover {
       color: #ffffff;
-      background-color: #381e5c;
+      background-color: #41236b;
       box-shadow: none; }
   .modal-dialog-linked-button:hover {
     color: #ffffff;
-    background-color: #381e5c; }
+    background-color: #41236b; }
   .modal-dialog-linked-button:first-child {
     border-radius: 0px 0px 0px 10px; }
   .modal-dialog-linked-button:last-child {
@@ -783,7 +783,7 @@ StScrollBar {
 
 .world-clocks-button, .weather-button, .events-button {
   color: #ffffff;
-  background-color: #2e194c;
+  background-color: #331c54;
   box-shadow: none;
   border-radius: 10px;
   color: #ffffff; }
@@ -810,7 +810,7 @@ StScrollBar {
 .events-button:hover,
 .events-button:focus {
   color: #ffffff;
-  background-color: #381e5c; }
+  background-color: #41236b; }
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
@@ -967,7 +967,7 @@ StScrollBar {
 
 .message {
   color: #ffffff;
-  background-color: #2e194c;
+  background-color: #331c54;
   box-shadow: none;
   border-radius: 10px;
   box-shadow: none; }
@@ -1511,7 +1511,7 @@ StScrollBar {
       border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
       color: #ffffff;
-      background-color: #381e5c;
+      background-color: #41236b;
       border: none; }
 
 .summary-source-counter {
@@ -1626,7 +1626,7 @@ StScrollBar {
 
 .keyboard-key {
   color: #ffffff;
-  background-color: #2e194c;
+  background-color: #331c54;
   box-shadow: none;
   min-height: 2.1em;
   min-width: 2.1em;
@@ -1635,11 +1635,11 @@ StScrollBar {
   border-radius: 2px; }
   .keyboard-key:focus {
     color: #ffffff;
-    background-color: #381e5c;
+    background-color: #41236b;
     box-shadow: none; }
   .keyboard-key:hover, .keyboard-key:checked {
     color: #ffffff;
-    background-color: #381e5c; }
+    background-color: #41236b; }
   .keyboard-key:active {
     color: #f0c800;
     background-color: rgba(37, 20, 61, 0.95);
@@ -1655,7 +1655,7 @@ StScrollBar {
     box-shadow: none; }
     .keyboard-key.default-key:hover, .keyboard-key.default-key:checked {
       color: #ffffff;
-      background-color: #381e5c; }
+      background-color: #41236b; }
     .keyboard-key.default-key:active {
       color: #f0c800;
       background-color: #341d57;
@@ -1746,7 +1746,7 @@ StScrollBar {
       box-shadow: none; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
         color: #ffffff;
-        background-color: #381e5c; }
+        background-color: #41236b; }
       .login-dialog .modal-dialog-button:default:active {
         color: #f0c800;
         background-color: #f0c800;
@@ -2088,7 +2088,7 @@ StScrollBar {
 
 .quick-slider .icon-button:hover {
   color: #ffffff;
-  background-color: #381e5c; }
+  background-color: #41236b; }
 
 .openweather-current-summarybox,
 .openweather-forecast-icon,

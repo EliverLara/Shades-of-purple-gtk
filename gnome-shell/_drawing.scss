@@ -143,7 +143,7 @@
   //
   // normal button
   //
-    $_bg: if($c!=$osd_bg_color, $c,  lighten($bg_color, 4%));
+    $_bg: if($c!=$osd_bg_color, $c,  lighten($bg_color, 6%));
 
     color: $fg_color;
     background-color: $_bg;
@@ -155,7 +155,7 @@
   // focused button
   //
     color: $selected_fg_color;
-    background-color: lighten($bg_color, 8%);
+    background-color: lighten($bg_color, 12%);
     box-shadow: none;
   }
 
@@ -166,7 +166,7 @@
     
 
     color: $selected_fg_color;
-    background-color: lighten($bg_color, 8%);
+    background-color: lighten($bg_color, 12%);
   }
   @else if $t==active {
   //
