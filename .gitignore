@@ -6,7 +6,6 @@ node_modules/
 *.css.map
 
 _gnome-shell/
-kde/
 
 install.sh
 *blue.*

@@ -1,0 +1,17 @@
+[kdeglobals][KDE]
+widgetStyle=kvantum
+
+[kdeglobals][General]
+ColorScheme=Shades-of-purple
+
+[kcminputrc][Mouse]
+cursorTheme=Sweet_cursors
+
+[plasmarc][Theme]
+name=Shades-of-purple
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Shades-of-purple
+
+

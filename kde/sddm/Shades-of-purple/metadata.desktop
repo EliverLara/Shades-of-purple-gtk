@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Shades-of-purple
+Description=Shades-of-purple sddm theme
+Author=Eliver Lara
+Copyright=(c) 2023, Eliver Lara
+License=GPL 3+
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/EliverLara/Shades-of-purple-gtk/
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=eliverlara@gmail.com
+Theme-Id=shades-of-purple
+Theme-API=2.0
