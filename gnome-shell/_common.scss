@@ -2260,7 +2260,8 @@ $base_padding: 6px;
 
   &:checked { 
     @include button(active, darken($darkpurple, 4%));
-    color: $selected_fg_color;
+    &:hover { @include button(active, darken($darkpurple, 8%)); }
+    &, &:hover { color: $selected_fg_color; }
   }
 
   &, &:hover, &:checked { border: none; }
@@ -2302,6 +2303,8 @@ $base_padding: 6px;
       @include button(active, darken($darkpurple, 4%));
       color: $selected_fg_color;
       border-width: 0;
+      &:hover { @include button(active, darken($darkpurple, 8%)); }
+      &, &:hover { color: $selected_fg_color; }
     }
   
     &:ltr { border-radius: 0 99px 99px 0; }
