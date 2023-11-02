@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Shades-of-purple  
+Name=Shades-of-purple-standard-buttons  
 Comment=An elegant dark theme for gnome
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Shades-of-purple
-MetacityTheme=Shades-of-purple
+GtkTheme=Shades-of-purple-standard-buttons
+MetacityTheme=Shades-of-purple-standard-buttons
 IconTheme=candy-icons
 ButtonLayout=:minimize,maximize,close
