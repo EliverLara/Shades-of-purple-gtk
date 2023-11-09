@@ -2542,6 +2542,12 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar:not(headerbar) > separator {
   background: #1c102f; }
 
+.nautilus-window .sidebar-pane .top-bar headerbar, .nautilus-window .sidebar-pane .top-bar:backdrop {
+  background-color: #1e1031;
+  border-top-right-radius: 0; }
+.nautilus-window .content-pane .top-bar headerbar {
+  border-top-left-radius: 0; }
+
 /**************
  * GtkInfoBar *
  **************/
