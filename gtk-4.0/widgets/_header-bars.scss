@@ -299,3 +299,16 @@ headerbar {
 .titlebar{
   @extend %titlebar;
 }
+
+// Gnome 45
+.nautilus-window {
+  .sidebar-pane .top-bar {
+    headerbar, &:backdrop {
+      background-color: $_sidebar_color; 
+      border-top-right-radius: 0;
+    }
+  }
+  .content-pane .top-bar headerbar {
+    border-top-left-radius: 0;
+  }
+}
