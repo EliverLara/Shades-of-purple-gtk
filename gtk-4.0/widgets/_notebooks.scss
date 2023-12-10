@@ -315,11 +315,22 @@ tabbar {
 
     > tab,
     > tabboxchild > tab {
+      button.flat {
+        padding: 0;
+        margin: 4px;
+        min-width: 20px;
+        min-height: 20px;
+        border-radius: 10px;
+        &:hover {
+          background-color: lighten($base_color, 15%);
+          color: $red;
+        }
+      }
       &:checked, &:selected { 
         border-radius: 0;
-    @include selected-tab(right); 
-    color: $selected_bg_color;
-       }
+        @include selected-tab(right); 
+        color: $selected_bg_color;
+      }
     }
   }
 }
