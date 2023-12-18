@@ -3846,12 +3846,8 @@ scale {
         margin-right: -15px;
         margin-left: 6px; }
 
-/**************
- * Scrollbars *
- **************/
 scrollbar {
-  background-color: #2c3648;
-  transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  background-color: #2c3648; }
   scrollbar.top {
     border-bottom: 1px solid #1d232f; }
   scrollbar.bottom {
@@ -3860,131 +3856,51 @@ scrollbar {
     border-right: 1px solid #1d232f; }
   scrollbar.right {
     border-left: 1px solid #1d232f; }
-  scrollbar:backdrop {
-    background-color: #242c3b;
-    border-color: #1e2531;
-    transition: 200ms ease-out; }
-  scrollbar slider {
-    min-width: 6px;
-    min-height: 6px;
+  scrollbar > range > trough > slider {
+    min-width: 8px;
+    min-height: 8px;
     margin: -1px;
     border: 4px solid transparent;
-    border-radius: 8px;
+    border-radius: 10px;
     background-clip: padding-box;
-    background-color: #929aa7; }
-    scrollbar slider:hover {
+    background-color: #929aa7;
+    transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    scrollbar > range > trough > slider:hover {
       background-color: #b5bcc8; }
-    scrollbar slider:hover:active {
+    scrollbar > range > trough > slider:hover:active {
       background-color: #dba3d1; }
-    scrollbar slider:backdrop {
-      background-color: #4d5565; }
-    scrollbar slider:disabled {
+    scrollbar > range > trough > slider:disabled {
       background-color: transparent; }
-  scrollbar.fine-tune slider {
-    min-width: 4px;
-    min-height: 4px; }
-  scrollbar.fine-tune.horizontal slider {
+  scrollbar > range.fine-tune > trough > slider {
+    transition: none;
+    min-width: 6px;
+    min-height: 6px; }
+  scrollbar > range.fine-tune.horizontal > trough > slider {
     border-width: 5px 4px; }
-  scrollbar.fine-tune.vertical slider {
+  scrollbar > range.fine-tune.vertical > trough > slider {
     border-width: 4px 5px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
     border-color: transparent;
-    opacity: 0.4;
     background-color: transparent; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering) > range > trough > slider {
       margin: 0;
       min-width: 3px;
       min-height: 3px;
-      background-color: #d8dee9;
-      border: 1px solid black; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
-      min-width: 5px;
-      min-height: 5px;
-      background-color: #d8dee9;
-      background-clip: padding-box;
-      border-radius: 100%;
-      border: 1px solid black;
-      -gtk-icon-source: none; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
+      background-color: alpha(#d8dee9,0.4);
+      border: 1px solid alpha(black,0.4); }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal > range > trough > slider {
       margin: 0 2px;
       min-width: 40px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal button {
-      margin: 1px 2px;
-      min-width: 5px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical slider {
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical > range > trough > slider {
       margin: 2px 0;
       min-height: 40px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical button {
-      margin: 2px 1px;
-      min-height: 5px; }
   scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
-    opacity: 0.8; }
-  scrollbar.horizontal slider {
+    background-color: alpha(#2c3648,0.8);
+    border: 1px solid alpha(black,0.8); }
+  scrollbar.horizontal > range > trough > slider {
     min-width: 40px; }
-  scrollbar.vertical slider {
+  scrollbar.vertical > range > trough > slider {
     min-height: 40px; }
-  scrollbar button {
-    padding: 0;
-    min-width: 12px;
-    min-height: 12px;
-    border-style: none;
-    border-radius: 0;
-    transition-property: min-height, min-width, color;
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    color: #929aa7; }
-    scrollbar button:hover {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: #b5bcc8; }
-    scrollbar button:active, scrollbar button:checked {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: #dba3d1; }
-    scrollbar button:disabled {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: rgba(146, 154, 167, 0.2); }
-    scrollbar button:backdrop {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: #4d5565; }
-      scrollbar button:backdrop:disabled {
-        border-color: transparent;
-        background-color: transparent;
-        background-image: none;
-        box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-        text-shadow: none;
-        -gtk-icon-shadow: none;
-        color: rgba(77, 85, 101, 0.2); }
-  scrollbar.vertical button.down {
-    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
-  scrollbar.vertical button.up {
-    -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
-  scrollbar.horizontal button.down {
-    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic"); }
-  scrollbar.horizontal button.up {
-    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic"); }
 
 treeview ~ scrollbar.vertical {
   border-top: 1px solid #1d232f;
