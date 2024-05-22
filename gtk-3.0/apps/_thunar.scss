@@ -9,7 +9,7 @@
 
   
 /* path-bar of thunar */
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar {
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar, .thunar toolbar {
     .path-bar-button {
         @include button(normal-header);
         border-radius: 0;
@@ -32,12 +32,13 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
             border-radius: 4px;
             border-style: solid;
         }
-        &:hover { color: $selected_bg_color; }
-        &:checked { @include button(active, transparentize($selected_bg_color, 0.3), #fff); }
+        &:hover,
+        &:checked { 
+            @include button(active-header); 
+            &:backdrop { &, label { color: #fff; } }
+        }
     }
-    .toggle.path-bar-button:hover {
-        @include button(active, transparentize($selected_bg_color, 0.3), #fff);
-    }
+
 }
   
 /* thunar sidepane */
@@ -45,9 +46,10 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     background: darken($_sidebar_color, 2%);
     padding: 1.5px;
     &:hover,  &:selected {
-        background: transparentize($selected_bg_color, 0.3);
+        background: transparentize(lighten($_sidebar_color, 7%), 0.07);
         color: $selected_fg_color;
         border-radius: 0;
         box-shadow: none;
+        @include button(active-header);
     }
 }
