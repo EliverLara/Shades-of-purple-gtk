@@ -34,7 +34,7 @@
     padding: 8px 12px;
     transition: all .12s ease-in;
     label{
-      color: #98abb2;
+      color: $fg_color;
     }
     &:selected{
       color: $selected_fg_color;
