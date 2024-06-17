@@ -166,8 +166,12 @@
  * Calendar events *
 ********************/
 .color-light{
-  & label, &.timed label {
-    color: #2e3440;
-    opacity:1;
+  &.timed label {
+    color: $fg_color;
+    opacity: 1;
+  }
+  .week-view &.timed label, & label, .year-view &:not(.timed) label  {
+    color: $selected_fg_color;
+    opacity: 1;
   }
 }
