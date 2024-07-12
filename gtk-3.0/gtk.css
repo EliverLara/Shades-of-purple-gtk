@@ -5741,9 +5741,9 @@ radiobutton.color-button:active > radio {
     border: none;
     background-color: #381e5c; }
   .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
-    color: #1E1E3F;
+    color: #ffffff;
     border: none;
-    background-color: #FAD000; }
+    background-color: #43246f; }
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
 
