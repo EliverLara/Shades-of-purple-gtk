@@ -567,7 +567,6 @@ StScrollBar {
     height: 0.4em;
     border-radius: 0.3em;
     color: #ffffff;
-    border: 1px solid #120a1e;
     -barlevel-height: 0.4em;
     -barlevel-background-color: #442672;
     -barlevel-active-background-color: #f0c800;
@@ -676,6 +675,7 @@ StScrollBar {
   color: #ffffff;
   background-color: rgba(37, 20, 61, 0.95);
   border: 1px solid #120a1e;
+  border-radius: 18px;
   box-shadow: 0px 0px 7px rgba(18, 10, 30, 0.8);
   padding: 12px; }
 
