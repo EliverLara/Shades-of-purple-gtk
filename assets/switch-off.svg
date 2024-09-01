@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="25.28"
-     inkscape:cx="13.765823"
-     inkscape:cy="14.517405"
+     inkscape:zoom="35.751319"
+     inkscape:cx="30.32056"
+     inkscape:cy="13.006513"
      inkscape:window-width="2560"
      inkscape:window-height="1372"
      inkscape:window-x="0"
@@ -41,9 +41,23 @@
        orientation="1,0"
        id="guide36915"
        inkscape:locked="false" />
+    <sodipodi:guide
+       position="-17.866938,23.495084"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <path
-     id="rect27178"
-     style="isolation:isolate;fill:#563090;fill-opacity:1;stroke-width:0"
-     d="m 10.5,1.9999998 h 24 c 5.817,0 10.5,4.683 10.5,10.5000002 C 45,18.317 40.317,23 34.5,23 h -24 C 4.6830002,23 2e-7,18.317 2e-7,12.5 2e-7,6.6829998 4.6830002,1.9999998 10.5,1.9999998 Z" />
+     style="isolation:isolate;fill:#000000;fill-opacity:0.1;stroke-width:1.17261"
+     d="M 0.024414,12.489218 A 11.875,10.45 0 0 0 0,13.13375 a 11.875,10.45 0 0 0 11.875,10.45 h 9.375 2.5 9.375 A 11.875,10.45 0 0 0 45,13.13375 11.875,10.45 0 0 0 44.97559,12.678282 11.875,10.45 0 0 1 33.125003,22.48375 h -9.375 -2.5 -9.375 A 11.875,10.45 0 0 1 0.024414,12.489218 Z"
+     id="path900" />
+  <path
+     style="display:inline;isolation:isolate;fill:#563090;fill-opacity:1;stroke-width:1.17261;opacity:1"
+     d="M 11.875,1.5837495 A 11.875,10.45 0 0 0 0,12.03375 a 11.875,10.45 0 0 0 11.875,10.45 h 9.375 2.5 9.375 A 11.875,10.45 0 0 0 45,12.03375 11.875,10.45 0 0 0 33.125,1.5837495 h -9.375 -2.5 z"
+     id="path872"
+     inkscape:connector-curvature="0" />
+  <path
+     style="isolation:isolate;fill:#000000;fill-opacity:0.1;stroke-width:1.17261"
+     d="M 11.875,1.5837495 A 11.875,10.45 0 0 0 0,12.03375 11.875,10.45 0 0 0 0.024414,12.489218 11.875,10.45 0 0 1 11.875,2.6837495 h 9.375 2.5 9.375 A 11.875,10.45 0 0 1 44.975586,12.678282 11.875,10.45 0 0 0 45,12.03375 11.875,10.45 0 0 0 33.125,1.5837495 h -9.375 -2.5 z"
+     id="path902" />
 </svg>
