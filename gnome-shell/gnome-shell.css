@@ -15,7 +15,7 @@ stage {
   .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus {
     color: #ffffff;
     background-color: #41236b;
-    box-shadow: none; }
+    box-shadow: none !important; }
   .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive {
     color: #928a9e;
     background-color: rgba(61, 46, 82, 0.66);
@@ -56,11 +56,11 @@ stage {
   .modal-dialog-linked-button:focus {
     color: #ffffff;
     background-color: #41236b;
-    box-shadow: none; }
+    box-shadow: none !important; }
     .modal-dialog-linked-button:focus:hover {
       color: #ffffff;
       background-color: #41236b;
-      box-shadow: none; }
+      box-shadow: none !important; }
   .modal-dialog-linked-button:hover {
     color: #ffffff;
     background-color: #41236b; }
@@ -1660,7 +1660,7 @@ StScrollBar {
   .keyboard-key:focus {
     color: #ffffff;
     background-color: #41236b;
-    box-shadow: none; }
+    box-shadow: none !important; }
   .keyboard-key:hover, .keyboard-key:checked {
     color: #ffffff;
     background-color: #41236b; }
