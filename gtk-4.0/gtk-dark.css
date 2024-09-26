@@ -1637,7 +1637,8 @@ spinbutton:not(.vertical), spinbutton.vertical > text, entry {
     border-radius: 0; }
   spinbutton:focus-within:not(.vertical), spinbutton.vertical > text:focus-within,
   entry:focus-within {
-    border-color: #c7a600; }
+    border-color: #c7a600;
+    box-shadow: 0px 0px 1px 1px #FAD000 inset; }
   spinbutton:disabled:not(.vertical), spinbutton.vertical > text:disabled,
   entry:disabled {
     color: #928a9e;
@@ -1666,7 +1667,8 @@ spinbutton:not(.vertical), spinbutton.vertical > text, entry {
     border-color: #2d0007; }
     spinbutton.error:focus-within:not(.vertical), spinbutton.vertical > text.error:focus-within,
     entry.error:focus-within {
-      border-color: #2d0007; }
+      border-color: #2d0007;
+      box-shadow: 0px 0px 1px 1px #FAD000 inset; }
     spinbutton.error:selected:focus:not(.vertical), spinbutton.vertical > text.error:selected:focus, spinbutton.error:selected:not(.vertical), spinbutton.vertical > text.error:selected,
     entry.error:selected:focus,
     entry.error:selected {
@@ -1680,7 +1682,8 @@ spinbutton:not(.vertical), spinbutton.vertical > text, entry {
     border-color: #380605; }
     spinbutton.warning:focus-within:not(.vertical), spinbutton.vertical > text.warning:focus-within,
     entry.warning:focus-within {
-      border-color: #380605; }
+      border-color: #380605;
+      box-shadow: 0px 0px 1px 1px #FAD000 inset; }
     spinbutton.warning:selected:focus:not(.vertical), spinbutton.vertical > text.warning:selected:focus, spinbutton.warning:selected:not(.vertical), spinbutton.vertical > text.warning:selected,
     entry.warning:selected:focus,
     entry.warning:selected {
@@ -1765,17 +1768,20 @@ entry, .linked:not(.vertical) >
 entry:drop(active) +
 entry {
   border-left-color: #a3be8c; }
-.linked:not(.vertical) > spinbutton:focus-within:not(.vertical), spinbutton.vertical.linked:not(.vertical) > text:focus-within, .linked:not(.vertical) >
-entry:focus-within {
-  border-color: #c7a600;
-  box-shadow: 0px 0px 1px 1px #FAD000 inset;
-  border-right-style: solid; }
-  .linked:not(.vertical) > spinbutton:focus-within:not(.vertical) + .popup button, spinbutton.vertical.linked:not(.vertical) > text:focus-within + .popup button, .linked:not(.vertical) >
-  entry:focus-within + .popup button {
-    border-left-color: #FAD000; }
-.linked:not(.vertical) > spinbutton:not(.vertical) + .popup button, spinbutton.vertical.linked:not(.vertical) > text + .popup button, .linked:not(.vertical) >
-entry + .popup button {
-  border-radius: 0px 4px 4px 0px; }
+.linked:not(.vertical) > spinbutton:not(.vertical), spinbutton.vertical.linked:not(.vertical) > text, .linked:not(.vertical) >
+entry {
+  border-right-style: solid;
+  border-right-color: transparent; }
+  .linked:not(.vertical) > spinbutton:focus-within:not(.vertical), spinbutton.vertical.linked:not(.vertical) > text:focus-within, .linked:not(.vertical) >
+  entry:focus-within {
+    border-color: #c7a600;
+    box-shadow: 0px 0px 1px 1px #FAD000 inset; }
+    .linked:not(.vertical) > spinbutton:focus-within:not(.vertical) + .popup button, spinbutton.vertical.linked:not(.vertical) > text:focus-within + .popup button, .linked:not(.vertical) >
+    entry:focus-within + .popup button {
+      border-left-color: #FAD000; }
+  .linked:not(.vertical) > spinbutton:not(.vertical) + .popup button, spinbutton.vertical.linked:not(.vertical) > text + .popup button, .linked:not(.vertical) >
+  entry + .popup button {
+    border-radius: 0px 6px 6px 0px; }
 .linked.vertical > spinbutton:not(:disabled):not(.vertical) + entry:not(:disabled), spinbutton.vertical.linked > text:not(:disabled) + entry:not(:disabled), .linked.vertical > spinbutton:not(:disabled):not(.vertical) + spinbutton:not(:disabled):not(.vertical), spinbutton.vertical.linked > text:not(:disabled) + spinbutton:not(:disabled):not(.vertical), spinbutton.vertical.linked > spinbutton:not(:disabled):not(.vertical) + text:not(:disabled), spinbutton.vertical.linked > text:not(:disabled) + text:not(:disabled), .linked.vertical >
 entry:not(:disabled) + entry:not(:disabled), .linked.vertical >
 entry:not(:disabled) + spinbutton:not(:disabled):not(.vertical), spinbutton.vertical.linked > entry:not(:disabled) + text:not(:disabled) {

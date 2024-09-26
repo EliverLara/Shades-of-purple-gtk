@@ -115,17 +115,14 @@
   
    
     .linked:not(.vertical) > & { 
+      border-right-style: solid;
+      border-right-color: transparent;
       &:focus-within {
-        border-color: entry_focus_border(); 
-        box-shadow: 0px 0px 1px 1px $selected_bg_color inset;
-        border-right-style: solid;
-        + .popup button {
-          border-left-color: $selected_bg_color;
-        }
+        @include entry(focus); 
+        
+        + .popup button { border-left-color: $selected_bg_color; }
       }
-      + .popup button {
-        border-radius: 0px 4px 4px 0px;
-      }
+      + .popup button { border-radius: 0px 6px 6px 0px; }
     }
  
    // Vertically linked entries
