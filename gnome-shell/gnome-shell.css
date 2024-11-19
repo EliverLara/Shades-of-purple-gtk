@@ -8,27 +8,27 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button, .icon-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   color: #ffffff;
   background-color: #331c54;
   box-shadow: none; }
-  .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
+  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     color: #ffffff;
     background-color: #41236b;
     box-shadow: none !important; }
-  .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
+  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #928a9e;
     background-color: rgba(61, 46, 82, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
+  .button:active, .icon-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
     color: #f0c800;
     background-color: rgba(37, 20, 61, 0.95);
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
+  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     color: #ffffff;
     background-color: #41236b; }
 
@@ -198,9 +198,13 @@ StScrollBar {
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
   padding: 0 !important; }
   .modal-dialog .modal-dialog-content-box {
-    margin: 32px 40px;
+    margin: 10px 30px;
     spacing: 32px;
     max-width: 28em; }
+  .modal-dialog .modal-dialog-button-box {
+    padding: 0 10px 10px 10px; }
+    .modal-dialog .modal-dialog-button-box .modal-dialog-button {
+      border-radius: 10px; }
   .modal-dialog .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px; }
@@ -245,12 +249,12 @@ StScrollBar {
 /* End Session Dialog */
 .end-session-dialog {
   border: none; }
-  .end-session-dialog .modal-dialog-linked-button:last-child {
+  .end-session-dialog .modal-dialog-linked-button:last-child, .end-session-dialog .modal-dialog-button:last-child {
     background-gradient-start: #653eff;
     background-gradient-end: #fb8fff;
     background-gradient-direction: horizontal;
     color: #fff; }
-    .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus {
+    .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus, .end-session-dialog .modal-dialog-button:last-child:hover, .end-session-dialog .modal-dialog-button:last-child:focus {
       background: #d00022;
       color: #fff; }
 
