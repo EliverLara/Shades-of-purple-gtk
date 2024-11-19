@@ -117,12 +117,12 @@ stacksidebar {
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
 
-placessidebar.sidebar, .nautilus-window .navigation-sidebar {
+placessidebar {
   background-color: $_sidebar_color;
 		row {
+      padding: 1px 11px;
 			&.sidebar-row {
         border-radius: 5px;
-        padding: 1px 11px;
         label { padding-left: 8px; }
 				&.sidebar-row {
 					.sidebar-icon {
