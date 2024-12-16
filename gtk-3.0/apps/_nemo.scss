@@ -41,10 +41,11 @@
     toolbar.primary-toolbar {
         margin-bottom: -1px;
         background: $headerbar_color;
-        button {
+        .path-bar button {
             @include button(normal-header);
             min-height: 24px;
             padding: 3px;
+            margin-right: -1px;
             &:hover,
             &:selected,
             &:active,
