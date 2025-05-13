@@ -2972,25 +2972,28 @@ tabbar tabbox {
   tabbar tabbox > tabboxchild {
     margin: 0 -3px;
     border-radius: 0; }
-  tabbar tabbox > tab button.flat,
-  tabbar tabbox > tabboxchild > tab button.flat {
-    padding: 0;
-    margin: 4px;
-    min-width: 20px;
-    min-height: 20px;
-    border-radius: 10px; }
-    tabbar tabbox > tab button.flat:hover,
-    tabbar tabbox > tabboxchild > tab button.flat:hover {
-      background-color: #563090;
-      color: #f90029; }
-  tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
-  tabbar tabbox > tabboxchild > tab:checked,
-  tabbar tabbox > tabboxchild > tab:selected {
-    border-radius: 0;
-    background: linear-gradient(to right, #FAD000, #FAD000) left bottom #221338 no-repeat;
-    background-size: 100% 2px;
-    border: 0;
-    color: #FAD000; }
+  tabbar tabbox > tab,
+  tabbar tabbox > tabboxchild > tab {
+    transition: none; }
+    tabbar tabbox > tab button.flat,
+    tabbar tabbox > tabboxchild > tab button.flat {
+      padding: 0;
+      margin: 4px;
+      min-width: 20px;
+      min-height: 20px;
+      border-radius: 10px; }
+      tabbar tabbox > tab button.flat:hover,
+      tabbar tabbox > tabboxchild > tab button.flat:hover {
+        background-color: #563090;
+        color: #f90029; }
+    tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
+    tabbar tabbox > tabboxchild > tab:checked,
+    tabbar tabbox > tabboxchild > tab:selected {
+      border-radius: 0;
+      background: linear-gradient(to right, #FAD000, #FAD000) left bottom #221338 no-repeat;
+      background-size: 100% 2px;
+      border: 0;
+      color: #FAD000; }
 
 /*********
  * Paned *
