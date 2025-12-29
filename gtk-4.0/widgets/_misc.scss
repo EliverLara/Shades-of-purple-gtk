@@ -31,33 +31,3 @@
     &:backdrop { &:hover, &:disabled, & { @extend %undecorated_button; }}
   }
 }
-
-/************
-* Assistant *
-*************/
-
-assistant {
-
-  border-bottom-left-radius:6px;
-  border-bottom-right-radius:6px;
-
-  .sidebar {
-    background-color: $base_color;
-    border-top: 1px solid $borders_color;
-
-    border-bottom-left-radius:6px;
-
-    &:backdrop {
-      background-color: $backdrop_base_color;
-      border-color: $backdrop_borders_color;
-    }
-  }
-
-  &.csd .sidebar { border-top-style: none; }
-
-  .sidebar GtkLabel,
-  .sidebar label { padding: 6px 12px; }
-
-  .sidebar GtkLabel.highlight,
-  .sidebar label.highlight { background-color: mix($bg_color, $fg_color, 80%); }
-}
